@@ -23,6 +23,9 @@ resource "random_string" "suffix" {
   special = false
 }
 
+### I'm a test comment
+
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "3.2.0"
