@@ -37,7 +37,7 @@ resource "aws_instance" "mongodb" {
 # Creates 4 volumes as per documentation
 resource "aws_ebs_volume" "mongovol" {
   count = 4
-  availability_zone = "us-east-2a"
+  availability_zone = "us-east-1a"
   size              = 4
   tags = {
     Name = "volume-mongo-${count.index + 1}"
