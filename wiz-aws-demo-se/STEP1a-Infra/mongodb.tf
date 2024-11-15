@@ -29,7 +29,7 @@ resource "aws_instance" "mongodb" {
 
   tags = {
       Name = "mongo-master"
-      Owner = "Tom"
+      Owner = "Steve"
   }
   depends_on = [ aws_instance.mongodb ]
 }
