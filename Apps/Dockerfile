@@ -2,7 +2,7 @@
 # WARNING: Do not use this in production
 
 # Use a vulnerable base image
-FROM ubuntu/nginx:latest
+FROM vulnerables/web-dvwa:latest
 
 # Set environment variables with AWS credentials (example)
 ENV AWS_ACCESS_KEY_ID="AKIAEXAMPLEKEY" \
